@@ -1,0 +1,107 @@
+// .carousel-box {
+//   position: relative;
+
+//   @media (max-width: 768px) {
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       top: 50%;
+//       right: 0;
+//       transform: translate(-50%, -50%);
+//       width: 20px;
+//       aspect-ratio: 1;
+//       background-image: url(../images/Arrow-right.svg);
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       cursor: pointer;
+//     }
+//   }
+
+//   & .slide {
+//     &__info {
+//       text-align: center;
+//       font-family: "Anonymous Pro", monospace;
+//       font-weight: 700;
+//       font-size: 1.6rem;
+//       color: $primary-color;
+//       padding-top: 4rem;
+//     }
+//   }
+// }
+
+// // .active,
+// // .dot:hover {
+// //   background-color: $primary-color;
+// // }
+
+// .slider-container {
+//   display: grid;
+//   grid-template-columns: (repeat(4, 100%));
+//   grid-column-gap: 5rem;
+//   overflow: scroll;
+//   overflow: hidden;
+//   padding: 4rem;
+//   scroll-snap-type: both mandatory;
+
+//   & img {
+//     // object-fit: cover;
+//     max-height: 550px;
+//   }
+
+//   & li {
+//     max-height: 550px;
+//     margin: 0 auto;
+//     scroll-snap-align: center;
+//   }
+// }
+
+// .active {
+//   scroll-snap-type: unset;
+// }
+
+// @media (min-width: 1050px) {
+//   .slider-container {
+//     display: grid;
+//     grid-template-columns: 48% 27% 48% 27%;
+//     grid-column-gap: 5rem;
+//     overflow: scroll;
+//     overflow: hidden;
+
+//     & li {
+//       scroll-snap-align: none;
+//     }
+
+//     & img {
+//       height: 410px;
+//     }
+
+//     & .slide__info {
+//       text-align: left;
+//     }
+//   }
+// }
+
+.slider-info {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .slider-info {
+    display: block;
+    text-align: center;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #686868;
+    padding-bottom: 8rem;
+  }
+
+  .dot {
+    @include circle(10px, transparent);
+    display: inline-block;
+    border: 2px solid $primary-color;
+    margin-top: 2rem;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+  }
+}

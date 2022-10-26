@@ -1,0 +1,75 @@
+button {
+  border: none;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &__home {
+    padding: 1rem 2rem;
+
+    &--primary {
+      color: $primary-color;
+      background-color: $white-color;
+    }
+
+    &--secondary {
+      color: $primary-color;
+      background-color: hsla(0, 0%, 95%, 0.5);
+    }
+  }
+
+  &__contact {
+    width: 100%;
+    padding: 1.15rem 2rem;
+
+    &--primary {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+
+    &--secondary {
+      font-weight: 400;
+      color: $primary-color;
+      background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 2.4rem;
+
+    &__home {
+      padding: 0.75rem 2.4rem;
+
+      &--primary {
+        color: $white-color;
+        background-color: $primary-color;
+      }
+
+      &--secondary {
+        color: $primary-color;
+        background-color: #d1d1d1;
+      }
+    }
+
+    &__contact {
+      padding: 2rem 2.4rem;
+
+      &--secondary {
+        font-weight: 700;
+        color: $primary-color;
+        background-color: #d1d1d1;
+      }
+    }
+  }
+}

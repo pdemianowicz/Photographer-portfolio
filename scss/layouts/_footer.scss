@@ -1,0 +1,47 @@
+.footer {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: $primary-color;
+
+  &__copyright {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      bottom: 8rem;
+      left: 10rem;
+      font-size: 2rem;
+      line-height: 27px;
+    }
+  }
+
+  &__socials {
+    @include flex-center;
+    gap: 2rem;
+    font-size: 2.4rem;
+    line-height: 33px;
+    // padding: 3rem;
+
+    & p {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      & p {
+        display: block;
+      }
+
+      & img {
+        display: none;
+      }
+    }
+  }
+}
+
+.container {
+  & .footer {
+    padding-bottom: 8rem;
+  }
+}

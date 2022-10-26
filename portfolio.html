@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;0,800;1,800&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./disc/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <p class="header__logo">Lo</p>
+
+        <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+          <ul class="primary-nav" id="primary-nav" data-visible="false">
+            <li><a href="./index.html">Home</a></li>
+            <li class="btn-active"><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- <div class="carousel-box">
+          <ul class="slider-container">
+            <li>
+              <img src="./images/alexandros-giannakakis-5PHHiK3-Ym4-unsplash.jpg" alt="" />
+              <p class="slide__info">ƒ/5.6, ISO 500, 1/640s</p>
+            </li>
+            <li>
+              <img src="./images/alexandros-giannakakis-ZHnwmhB-Aqc-unsplash.jpg" alt="" />
+              <p class="slide__info">ƒ/5.4, ISO 400, 1/2000s</p>
+            </li>
+            <li>
+              <img src="./images/alexandros-giannakakis-n-vjDvvQkek-unsplash.jpg" alt="" />
+              <p class="slide__info">ƒ/5.6, ISO 500, 1/100s</p>
+            </li>
+
+            <li>
+              <img src="./images/alexandros-giannakakis-y5dTAna5uhc-unsplash.jpg" alt="" />
+              <p class="slide__info">ƒ/5.2, ISO 400, 1/1500s</p>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- <div
+          class="swiffy-slider slider-item-show2 slider-item-reveal slider-item-snapstart slider-indicators-round slider-indicators-dark slider-indicators-outside slider-nav-mousedrag"
+        >
+          <ul
+            class="slider-container"
+            style="
+              --swiffy-slider-item-gap: 4rem;
+              --swiffy-slider-item-reveal: 20%;
+              grid-template-columns: 48% 27% 48% 27%;
+            "
+          >
+            <li class="">
+              <div id="slide1">
+                <img src="./images/alexandros-giannakakis-5PHHiK3-Ym4-unsplash.jpg" alt="" />
+                <p class="slide__info">ƒ/5.6, ISO 500, 1/640s</p>
+              </div>
+            </li>
+            <li class="">
+              <div id="slide2">
+                <img src="./images/alexandros-giannakakis-ZHnwmhB-Aqc-unsplash.jpg" alt="" />
+                <p class="slide__info">ƒ/5.4, ISO 400, 1/2000s</p>
+              </div>
+            </li>
+            <li class="">
+              <div id="slide3">
+                <img src="./images/alexandros-giannakakis-n-vjDvvQkek-unsplash.jpg" alt="" />
+                <p class="slide__info">ƒ/5.6, ISO 500, 1/100s</p>
+              </div>
+            </li>
+            <li class="slide-visible">
+              <div id="slide4">
+                <img src="./images/alexandros-giannakakis-y5dTAna5uhc-unsplash.jpg" loading="lazy" alt="" />
+                <p class="slide__info">ƒ/5.2, ISO 400, 1/1500s</p>
+              </div>
+            </li>
+          </ul>
+
+          <button type="button" class="slider-nav"></button>
+          <button type="button" class="slider-nav slider-nav-next"></button>
+
+          <ul class="slider-indicators">
+            <li class=""></li>
+            <li class=""></li>
+            <li class="active"></li>
+            <li class=""></li>
+          </ul>
+        </div> -->
+
+        <style>
+          .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+          }
+
+          .swiper-wrapper {
+            align-items: center;
+          }
+
+          .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          @media (max-width: 768px) {
+            .swiper-slide img {
+              padding: 2rem;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .swiper-slide {
+              max-width: 48%;
+              align-items: flex-start;
+            }
+
+            p {
+              padding: 1.5rem;
+            }
+
+            .swiper-slide:nth-child(2n) {
+              width: 27%;
+            }
+
+            .swiper-slide:nth-child(3n) {
+              width: 48%;
+            }
+          }
+        </style>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/alexandros-giannakakis-5PHHiK3-Ym4-unsplash.jpg" alt="" />
+              <p class="slide__info">ƒ/5.6, ISO 500, 1/640s</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/alexandros-giannakakis-ZHnwmhB-Aqc-unsplash.jpg" alt="" />
+              <p class="slide__info">ƒ/5.4, ISO 400, 1/2000s</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/alexandros-giannakakis-n-vjDvvQkek-unsplash.jpg" alt="" />
+              <p class="slide__info">ƒ/5.6, ISO 500, 1/100s</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/alexandros-giannakakis-y5dTAna5uhc-unsplash.jpg" loading="lazy" alt="" />
+              <p class="slide__info">ƒ/5.2, ISO 400, 1/1500s</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </main>
+
+      <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 40,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script> -->
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          freeMode: {
+            enabled: false,
+          },
+          pagination: {
+            enabled: true,
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+
+          paginationDisabledClass: "swiper-pagination-disabled",
+          breakpoints: {
+            768: {
+              slidesPerView: "auto",
+              spaceBetween: 40,
+              pagination: {
+                enabled: false,
+              },
+
+              freeMode: {
+                enabled: true,
+              },
+            },
+          },
+        });
+      </script>
+
+      <div class="wrapper">
+        <div class="slider-info">
+          <p>
+            swipe to view<br />
+            next or previous
+          </p>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

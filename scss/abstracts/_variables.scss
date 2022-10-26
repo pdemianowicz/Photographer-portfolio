@@ -1,0 +1,25 @@
+/// Regular font family
+/// @type List
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Colors
+$primary-color: #1d1d1d;
+$white-color: #f2f2f2;
+
+$text-color: rgb(34, 34, 34);
+$brand-color: rgb(229, 0, 80);
+$light-grey: rgb(237, 237, 237);
+$mid-grey: rgb(153, 153, 153);
+$dark-grey: rgb(68, 68, 68);
+
+/// Gradients
+$mobile-gradient: linear-gradient(to top, rgba(29, 29, 29, 0.3), rgba(242, 242, 242, 0), rgba(29, 29, 29, 0.3));
+$gradient: linear-gradient(to top, rgba(29, 29, 29, 0.3), rgba(242, 242, 242, 0));

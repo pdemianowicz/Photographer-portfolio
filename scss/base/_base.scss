@@ -1,0 +1,22 @@
+:root {
+  font-size: 62.5%;
+  /* 1rem = 10px, 0.1rem = 1px */
+
+  // @media (max-width: 1250px) {
+  //   font-size: 55%;
+  // }
+
+  // @media (max-width: 550px) {
+  //   font-size: 50%;
+  // }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Anonymous Pro", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #f2f2f2;
+}

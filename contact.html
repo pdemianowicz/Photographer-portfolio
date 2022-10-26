@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;0,800;1,800&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./disc/style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <p class="header__logo">Lo</p>
+
+        <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+          <ul class="primary-nav" id="primary-nav" data-visible="false">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li class="btn-active"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="contact">
+          <h1 class="contact__title">Contact form</h1>
+          <form class="form" action="">
+            <div class="form__wrapper">
+              <label for="form__name"
+                >Name <input type="text" placeholder="..." class="form__name" id="form__name" />
+              </label>
+              <label for="form__email"
+                >Email <input type="email" placeholder="...@example.com" class="form__email" id="form__email"
+              /></label>
+              <label for="form__subject"
+                >Subject <input type="text" placeholder="..." class="form__subject" id="form__subject"
+              /></label>
+            </div>
+            <div class="message-box">
+              <label for="form__message"
+                >Message
+                <textarea placeholder="..." class="form__message" id="form__message"></textarea>
+                <!-- <input type="text" placeholder="..." class="form__message" id="form__message" /> -->
+              </label>
+            </div>
+            <div class="contact__btn-box">
+              <button class="btn btn__contact btn__contact--primary">Send</button>
+              <button class="btn btn__contact btn__contact--secondary">Save draft</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <ul class="footer__socials">
+          <li>
+            <a href="#">
+              <img src="./images/Instagram.svg" alt="" />
+              <p>Instagram</p>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/Facebook.svg" alt="" />
+              <p>Facebook</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://unsplash.com/photos/5PHHiK3-Ym4"
+              ><img src="./images/Unsplash.svg" alt="" />
+              <p>Unsplash</p>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
