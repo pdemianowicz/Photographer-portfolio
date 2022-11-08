@@ -457,6 +457,51 @@ button {
     background-position: center center;
   }
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide img {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .swiper-slide {
+    max-width: 48%;
+    align-items: flex-start;
+  }
+  p {
+    padding: 1.5rem;
+  }
+  .swiper-slide:nth-child(2n) {
+    width: 27%;
+  }
+  .swiper-slide:nth-child(3n) {
+    width: 48%;
+  }
+}
 .slider-info {
   display: none;
 }
